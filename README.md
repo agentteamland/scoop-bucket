@@ -1,27 +1,17 @@
-# AgentTeamLand Scoop Bucket
+# 🪣 AgentTeamLand Scoop Bucket
 
-Scoop manifests for the AgentTeamLand ecosystem (Windows).
+> Auto-managed Scoop manifest for the [`atl` CLI](https://github.com/agentteamland/cli) (Windows).
 
-## Install
+This bucket holds a single JSON manifest at `bucket/atl.json`. Goreleaser overwrites it on every git tag in [`agentteamland/cli`](https://github.com/agentteamland/cli) — no manual edits land here. Branch protection is intentionally NOT applied (would block goreleaser's force-push).
 
-```powershell
-scoop bucket add agentteamland https://github.com/agentteamland/scoop-bucket
-scoop install atl
-```
+## 📚 Documentation
 
-## Update
+Full docs live at **[agentteamland.github.io/docs](https://agentteamland.github.io/docs/)**.
 
-```powershell
-scoop update atl
-```
+Most relevant sections:
 
-## Available apps
-
-| Name | Description |
-|---|---|
-| `atl` | AgentTeamLand package manager CLI |
-
-Manifests are updated automatically by [goreleaser](https://goreleaser.com/) when a new version is tagged in [agentteamland/cli](https://github.com/agentteamland/cli).
+- [Install `atl` (Scoop section)](https://agentteamland.github.io/docs/guide/install#windows-scoop) — the user-facing install commands
+- [Release pipeline](https://agentteamland.github.io/docs/contributing/release-pipeline) — how this bucket gets auto-bumped on every cli tag (the maintainer-facing detail)
 
 ## License
 
